@@ -1,1 +1,320 @@
 
+html, body, * {
+    padding: 0;
+    margin: 0;
+}
+p, h3 {
+    padding: 1em 0 .5em 0;
+}
+.describeit{
+    /*background-color: white;*/
+    overflow: visible;
+    position:fixed;
+    top:15%;
+    left:28%;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 35px;
+    /*font-style:italic;*/
+    /*color:blue;*/
+    width:44%;
+    padding: 15px 15px 15px 15px;
+    display:block;
+    /*font-style: italic;*/
+    color: white;
+
+
+}
+.ros_cover img{
+    max-width:100%;
+    height:auto;
+}
+.ham_cover img{
+    max-width:100%;
+    height:auto;
+}
+.DESCRIBEPLAYER,
+.DESCRIBEPLAYER,
+.DESCRIBEROS,
+.DESCRIBEOPHELIA,
+.DESCRIBEGUIL,
+.DESCRIBEHAM, .DESCRIBEGERTRUDE, .DESCRIBEALFRED, .DESCRIBECLAUDIUS, .DESCRIBEPOLONIUS, .DESCRIBELAERTES, .DESCRIBEHORATIO {
+    display: none;
+}
+
+.ros_DESCRIBE{
+    background-color: black;
+    overflow: visible;
+    position: fixed;
+    left:14%;
+    width:22%;
+    padding: 20px 20px 20px 20px;
+
+}
+.ham_DESCRIBE{
+    background-color: black;
+    overflow: visible;
+    position: fixed;
+    left:64%;
+    width:22%;
+    padding: 20px 20px 20px 20px;
+    
+    
+}
+
+.wrapper {
+    
+    max-width: 100%;
+    margin: 0 auto;
+}
+/*#rostoscroll, #hamtoscroll{
+    display:none;
+}*/
+#rostoscroll{
+    left:50%;
+    top:50%;
+    background-color: red;
+    width:200px;
+    height:100px;
+    position:fixed;
+    overflow: auto;
+    z-index: 2000;
+       display:none;
+
+}
+#hamtoscroll{
+    left:70%;
+    top:50%;
+    background-color: red;
+    width:200px;
+    height:100px;
+    position:fixed;
+    overflow: auto;
+    z-index: 2000;
+    display:none;
+}
+#ros {
+    
+
+    /*margin-right: 50%;*/
+    width: 47%;
+    font-family: 'Merriweather', serif;
+
+    font-size: 30px;
+    line-height: 120%;
+    word-wrap:break-word;
+    padding:3% 0% 3% 2% ;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity:0.8;
+}
+#ros:hover{
+    opacity:1;
+}
+#ham:hover{
+    opacity:1;
+}
+.ros_cover, .ham_cover{
+    font-family: 'Merriweather', serif;
+    font-size: 60px;
+    font-style: bold;
+    line-height: 120%;
+
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+#overlay .wrapper {
+    height: 100%;
+}
+#ham {
+    overflow-y:scroll;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: inline-block;
+    width: 47%;
+    float: right;
+    /*max-height: 100%;*/
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    line-height: 120%;
+    word-wrap:break-word;
+    padding:3% 0% 3% 5% ;
+    opacity:0.8;
+}
+*#ham {
+    overflow-y: auto;
+}
+.describecharacter{
+    display:none;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-style:italic;
+    line-height: 110%;
+
+}
+#ham>* {
+    max-width: 98%; /* leave some space for vertical scrollbar */
+}
+
+.actionstyle{
+    /*font-style: italic;*/
+    font-size: 24px;
+}
+.character{
+    font-family: Helvetica;
+    /*font-size: 35;*/
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color:white;
+    background-color: black;
+
+}
+.character:hover {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    background-color: white;
+    letter-spacing: 3px;
+    color: black;
+}
+/*#GUIL:hover ~  #GUIL {
+    background-color: blue;
+
+}*/
+
+/*.GUIL{
+    background-color: blue;
+}*/
+/*.GUIL:hover~ .describecharacter{
+    display:block;
+}*/
+/*.ROS{
+    background-color: red;
+}
+.PLAYER{
+    background-color: pink;
+}
+.PLAYER:hover~ .DESCRIBEPLAYER{
+    display: block;*/
+   /* background-color:pink;*/
+
+/*.GERTRUDE, .QUEEN{
+    background-color: #50E272;
+}
+.ALFRED{
+    background-color: #18D1BB;
+}
+.CLAUDIUS,.KING{
+    background-color: #FFA300;
+}
+.SPIES{
+    background-color: #666666;
+}
+.HAMLET {
+    background-color: #83A4FF;
+}
+.TRAGEDIANS, .PLAYERS{
+    background-color: #BA85B8;
+}
+.OPHELIA{
+    background-color: #B331FF;
+}
+.POLONIUS{
+    background-color: #62995B;
+}
+.PLAYER-KING{
+    background-color: #BA80AC;
+}
+.PLAYER-QUEEN{
+    background-color: #FFB0EC;
+}
+.SLEEPER{
+    background-color: #9B8396;
+}
+.OSRIC{
+    background-color: #9B5196;
+}
+.POISONER{
+    background-color: #776272;
+}
+.ENGLISHKING{
+    background-color: #6A9099;
+}
+.ESCORT{
+    background-color: #207184;
+}
+.FORTINBRAS{
+    background-color: #B0FFF0;
+}
+.LAERTES{
+    background-color: #70483A;
+}
+.AMBASSADORS{
+    background-color: #00B232;
+}
+.HORATIO{
+    background-color: #7676C4;
+}
+.DRUMMER{
+    background-color: #977DB2
+}
+.HORN-PLAYER{
+    background-color: #AB7DB2
+}
+.FLAUTIST{
+    background-color: #B27D9C
+}
+.BERNARDO{
+    background-color: #B27C4C
+}
+.FRANCISCO{
+    background-color: #B59C4C
+}
+.MARCELLUS{
+    background-color: #999DB2
+}
+.VOLTIMAND{
+    background-color: #70833A;
+}
+.CORNELIUS{
+    background-color: #5476C9
+}
+.LORDS{
+    background-color: #5414B9
+}
+.REYNALDO{
+    background-color: #5374B9
+
+}
+.PROLOGUE{
+    background-color: #5374A8
+
+}
+.LUCIANUS{
+    background-color: #2434A8
+}
+.CAPTAIN{
+    background-color: #2545A8
+
+}
+.GENTLEMAN{
+    background-color: #F69C4C
+
+}
+.DANES{background-color: #C78C4C}
+.SPOKESMAN{background-color: #C94C4C}*/
+
+.ham_anchor {
+    background-color: white !important;
+    padding-right: 120px !important;
+}
+.ros_anchor {
+    background-color: white !important;
+    padding-right: 120px !important;
+}
